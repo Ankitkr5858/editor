@@ -1,0 +1,118 @@
+body {
+  background: #ddd;
+}
+
+.container {
+  min-width: 300px;
+}
+
+.rte-btn {
+  align-items    : center;
+  background     : 0 0;
+  border         : 0;
+  border-radius  : 3px;
+  box-shadow     : none;
+  color          : #212529;
+  display        : flex;
+  flex           : 0 0 auto;
+  font-size      : 14px;
+  font-style     : normal;
+  font-weight    : 400;
+  height         : 34px;
+  justify-content: center;
+  margin         : 2px 5px 3px 0;
+  outline        : 0;
+  overflow       : hidden;
+  padding        : 0;
+  text-transform : none;
+  width          : 34px;
+}
+
+.rte-btn:hover {
+  background: #dededf;
+  border    : 0;
+  box-shadow: none;
+  color     : #212529;
+}
+
+.rte-toolbar {
+  display        : flex;
+  justify-content: flex-start;
+  padding-left   : 8px;
+  padding-right  : 8px;
+  border-top     : 1px solid #fff;
+  border-bottom  : 1px solid #d9dad9;
+  border-radius  : 5px 5px 0 0;
+  background     : #fff;
+}
+
+.rte-container {
+  display              : block;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius        : 3px 3px 0 0;
+  box-shadow           : 0 0px 10px #00000040;
+}
+
+.rte-textarea {
+  display   : block;
+  padding   : 15px;
+  width     : 100%;
+  min-height: 450px;
+  max-height: 450px;
+  background: #fff;
+  overflow-y: scroll;
+  resize    : none;
+  border    : none;
+  outline   : none;
+  transition: all 500ms;
+
+  &:focus {
+    box-shadow: 0px 0px 2px #0e6dff;
+  }
+}
+
+.loader-container {
+  background-color: rgba(17, 13, 13, 0.486);
+  position        : fixed;
+}
+
+.loader {
+  position           : fixed;
+  width              : 45px;
+  height             : 45px;
+  display            : inline-block;
+  padding            : 0px;
+  border-radius      : 100%;
+  margin             : auto;
+  left               : 0;
+  right              : 0;
+  top                : 0;
+  bottom             : 0;
+  border             : 5px solid;
+  border-top-color   : rgba(246, 36, 89, 1);
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+  border-left-color  : rgba(246, 36, 89, 1);
+  border-right-color : rgba(255, 255, 255, 0.3);
+  -webkit-animation  : loader 1s ease-in-out infinite;
+  animation          : loader 1s ease-in-out infinite;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
